@@ -1,0 +1,452 @@
+
+body{
+    margin: 0;
+    background-color:lightgrey;
+    font-family: 'Cormorant Garamond', serif;
+    box-sizing: border-box;
+}
+
+/*--------------------------------------*/
+/*-----------GENERAL RULES--------------*/
+
+h1, h2, h3{
+    font-family:'PT Sans', sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1rem;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+
+p{
+    margin-top: 0;
+}
+
+a{
+    text-decoration: none;
+    text-decoration-line: none;
+    color: black;
+}
+
+/*-----------------------------------*/
+/*-------------HEADER ---------------*/
+
+header{
+    background-color: lightgrey;
+    width: 100vw;
+    position: sticky;
+    top: 0;   
+    z-index: 100;
+    border-bottom: 1px solid grey;
+}
+
+.headWrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 0px 30px;
+    box-sizing: border-box;
+}  
+
+/* -----------Header logo----------- */
+
+.linuxLogo{
+    display: flex;
+    position: relative;
+    font-size: 1.2rem; 
+}
+
+.linuxLogo a{
+    display: flex;
+    align-items: center;
+}
+
+.linuxLogo img{
+    display: flex;
+    justify-content: center;
+    height: 60%;
+}
+
+/*-- Navigation for large devices ---*/
+
+.headNav{
+    display: none;
+}
+
+/* Navigation for small/medium devices */
+
+.headBurgerNav {
+    display: flex;
+    align-items: center;
+    position: relative;  
+}
+      
+#dropdownNav{
+    display: none;
+    flex-direction: column;
+    background-image: linear-gradient(top right, rgb(0, 162, 255), rgb(192, 224, 243));
+    font-family:'PT Sans', sans-serif;
+    position: absolute;
+    top: 70px;
+    right: -30px;
+    width: 100vw;
+    box-sizing: border-box;  
+}
+
+#dropdownNav a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+#dropdownNav a:hover{
+    background-color: grey;
+}
+
+/*---------Hamburger icon------------*/
+
+.fa{
+    font-size: 30px;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+
+/*------------------------------------*/
+/*----------SECTION HERO--------------*/
+
+.hero{
+    display: flex;
+    height: 35vh;
+    width: 100vw;
+}
+
+.welcomeTagline img{
+    width: 100%; 
+    height: 100%;
+}
+
+.welcomeTagline{
+    width: 100%; 
+    position: relative;    
+}
+
+.heroText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 15vh;
+    font-family:'PT Sans', sans-serif;
+}
+
+.heroText h1{
+    margin-bottom: 0;
+}
+
+/*------------------------------------*/
+/*-----------MAIN CONTENT-------------*/
+
+.mainWrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/*------------------------------------*/
+/* ------SECTION ARTICLES-------------*/
+
+.sectionArticles{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    margin-bottom: 10px;
+    padding: 20px 30px 20px 30px;
+    background-color: #f7f5f5; 
+    box-sizing: border-box;
+}
+
+/*------Articles----------------------*/
+
+.articleManjaro,
+.articleUbuntu,
+.articlePop{
+    padding-top: 20px;
+    box-sizing: border-box; 
+}
+
+/*-----All article logos/h2/text------*/
+
+.articleLogos{
+    display: flex;
+    padding-bottom: 20px;
+    height: 5vh;   
+}
+
+.articleLogos img{
+    display: flex;
+    height: 100%;
+}
+
+.articleLogos h2{   
+    align-self: center; 
+    text-align: center;
+    padding-right: 15%;
+    width: 100%;
+}
+
+.articleText{
+    display: flex;
+    flex-direction: column;
+}
+
+/*---------All article img------------*/
+
+.articleImg{
+    display: flex;
+    height: 100%;
+}
+
+.articleImg img{
+    width: 100%;
+}
+
+/*------------------------------------*/
+/* -----Section Flavours of Linux-----*/
+
+#sectionOfFlavoursH2{
+    text-align: center;
+    width: 100vw;
+    padding: 0px 30px;
+    background-color: lightgrey;
+}
+
+/*----------All articles-------------*/
+
+.articleRaspberry,
+.articleMostServers,
+.articleEveryDay,
+.articleTotallyFree{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 10px;
+    padding: 20px 30px;  
+    background-color: #f7f5f5; 
+    box-sizing: border-box;    
+}
+
+.articleTotallyFree{
+    margin-bottom: 0;
+}
+
+/*---------------Icons----------------*/
+
+.articleRaspberry .fab,
+.articleMostServers .fas,
+.articleEveryDay .fas,
+.articleTotallyFree .fas{
+    display: flex;
+    justify-content: center;
+    font-size: 150px;
+}
+
+/*--------------Headings--------------*/
+
+.articleRaspberry h3,
+.articleMostServers h3,
+.articleEveryDay h3,
+.articleTotallyFree h3{
+    text-align: center;
+}
+  
+/*------------------------------------*/
+/*----------------FOOTER--------------*/
+
+footer p{
+    text-align: center;
+    background-color: white;
+    padding: 20px 30px;
+}
+
+footer a:hover{
+    color: blue;
+}
+
+    /*******************************/
+
+    @media only screen and (min-width: 768px){
+
+    /*-----------HEADER-md---------*/
+
+    .headWrap{
+        height: 70px;
+    }
+
+    #dropdownNav{
+        width: 30vw;
+    }
+
+    /*-----------------------------*/
+    /* ------HERO-md---------------*/
+
+    .hero{
+        height: 30vh;
+    }
+
+    .hero img{
+        height: 100%;
+    }
+
+    .hero .heroText{
+        top: 17vh;
+    }
+
+    /*-----------------------------*/
+    /*MAIN/FIRST ARTICLE SECTION-MD*/
+
+    .mainWrap{
+        box-sizing: border-box;
+    }
+
+    .firstSecArticle section:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+
+   /*-----Section articles-md------*/
+
+    .sectionArticles{
+        flex-direction: row;
+    }
+    
+    .articleManjaro,
+    .articleUbuntu,
+    .articlePop{
+        width: 50%;
+        padding-left: 20px;
+    }
+
+    .articleUbuntu{
+        padding-left: 0;
+        padding-right: 20px;
+    }
+
+    .articleImg{
+        height: auto;
+        width: 50%;
+    }
+
+    .articleImg img{
+        object-fit: cover;
+        padding-bottom: 20px;
+    }
+ 
+    .articleTextPop{
+        display: flex;
+        flex-direction: row;  
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+
+    .textPop-P{
+        max-width: 48%;       
+    }
+
+    /*----------------------------------*/
+    /* Section flavours of Linux- medium*/ 
+
+    .sectionFlavoursOfLinux{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .articleRaspberry,
+    .articleMostServers,
+    .articleEveryDay,
+    .articleTotallyFree{
+        max-width: 50%;
+    }
+
+    .articleEveryDay{
+        margin-bottom: 0;
+    }
+    }
+        /****************************************/
+
+        @media only screen and (min-width: 992px){
+        
+        /*------------HEADER-LG-----------------*/
+
+        .headWrap{
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .linuxLogo{
+            width: 20%;
+        }
+
+        /* ----Navigation for large devices ----*/
+
+        .headNav{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 80%;
+        }
+      
+        .headNav a{
+            padding-right: 20px;
+            font-family:'PT Sans', sans-serif;
+        }
+
+        .headNav a:hover{
+            font-weight: bolder;
+        }
+
+        /*-----Navigation for small devices-----*/
+
+        .headBurgerNav{
+            display: none;
+        }
+
+        /*--------------------------------------*/
+        /*-----------MAIN CONTENT-LG------------*/
+
+        .mainWrap{
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /*-----------Section articles-lg---------*/
+
+        .sectionArticles{
+            max-width: 1200px;
+        }
+
+        /*---------------------------------------*/
+        /*-------Section flavours of Linux------ */
+
+        .sectionFlavoursOfLinux{
+            max-width: 1200px;
+            margin: auto;
+        }
+        }
