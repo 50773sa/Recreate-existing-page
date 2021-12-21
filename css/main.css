@@ -93,7 +93,7 @@ header{
 #dropdownNav{
     display: none;
     flex-direction: column;
-    background-image: linear-gradient(top right, rgb(0, 162, 255), rgb(192, 224, 243));
+    background-image: linear-gradient(to right, rgb(9, 62, 12), rgb(214, 215, 214));
     font-family:'PT Sans', sans-serif;
     position: absolute;
     top: 70px;
